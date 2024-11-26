@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  /* overflow: hidden;  Evita scroll si hay alguna animación rara */
+  transition: background-image 4s ease-in-out;
+}
+
+.fade-background {
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}
+
+.fade-background-active {
+  opacity: 1;
+  transition: opacity 4s ease-in-out;
+}
