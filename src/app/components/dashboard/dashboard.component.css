@@ -1,0 +1,80 @@
+/* Fondo para el contenedor */
+.background-container {
+  position: fixed; /* Fijo para que permanezca en el fondo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1; /* Detrás del contenido */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 1s ease-in-out;
+}
+
+/* Contenedor del contenido que puede desplazarse */
+.container {
+  position: relative;
+  z-index: 1;
+  height: auto; /* Permite que el contenido se expanda */
+  overflow: auto; /* Habilita el desplazamiento si es necesario */
+}
+
+
+p, h2, .pt-3{
+  color: #ffffff;
+}
+
+span{
+  color: #ffffff;
+  font-size: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.custom-jumbotron {
+  /* background: linear-gradient(to right, #111828, #00bfff);  Cambia los colores según tus preferencias */
+  background: hsla(210, 100%, 50%, 0.5);
+  padding: 2rem;
+  border-radius: 0.75rem; /* Mantiene las esquinas redondeadas */
+  color: white; /* Ajusta el color del texto si es necesario para mejorar el contraste */
+  margin-top: -60px;
+
+}
+
+
+.border {
+  /* background: linear-gradient(to right, #111828, #00bfff);  Cambia los colores según tus preferencias */
+  background: hsla(210, 100%, 50%, 0.5);
+  padding: 2rem;
+  border-radius: 0.75rem; /* Mantiene las esquinas redondeadas */
+  color: white; /* Ajusta el color del texto si es necesario para mejorar el contraste */
+}
+
+/*
+.border:hover {
+  background: linear-gradient(to right, #111828, #0080b3);
+}
+*/
+
+
+.img-logo {
+  height: 250px;
+}
+
+.d-flex {
+  margin-top: -60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrará horizontalmente la imagen */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) { /* Puedes ajustar el tamaño de la pantalla según tus necesidades */
+  .img-logo {
+      height: 250px;
+  }
+  .d-flex {
+      justify-content: center; /* Centro horizontal en dispositivos pequeños */
+      text-align: center;
+  }
+}
